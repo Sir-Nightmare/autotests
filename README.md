@@ -8,16 +8,18 @@
 - **Clone repository:** `git clone https://github.com/Sir-Nightmare/autotests.git`  
 - **Install necessary module _pywinauto_:** `pip3 install -r requirements.txt`
 - **Edit constants with paths and password in needed script**
-- **Run needed script:** 
-`python autotest1.py <url to check>` 
-`python autotest2.py` 
-`python autotest3.py <url of a bank or PayPal enc>` 
+- **Run needed script:**   
+`python autotest1.py <url to check>`   
+`python autotest2.py`   
+`python autotest3.py <url of a bank or PayPal enc>`   
 
 ####Notes:
 - [KIS 2017](https://products.s.kaspersky-labs.com/english/homeuser/kis2017/kis17.0.0.611en_11482.exe) 
 have to be installed.
 - You need to set a password to managing KIS which will be used in autotests.
 - Windows Defender has to be [turned off](http://www.howtogeek.com/howto/15788/how-to-uninstall-disable-and-remove-windows-defender.-also-how-turn-it-off/).
+- Autotest1 will close all IE windows and clear IE history, cookies and temp files. It is essential to
+guarantee proper work.
 
 ####Examples:
 
