@@ -6,7 +6,7 @@
 
 ## Usage
 - **Clone repository:** `git clone https://github.com/Sir-Nightmare/autotests.git`  
-- **Install necessary module _pywinauto_:** `pip3 install -r requirements.txt`
+- **Install necessary modules:** `pip3 install -r requirements.txt`
 - **Edit constants with paths and password in needed script**
 - **Run needed script:**   
 `python autotest1.py <url to check>`   
