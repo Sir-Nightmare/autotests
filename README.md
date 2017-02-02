@@ -7,7 +7,7 @@
 ## Usage
 - **Clone repository:** `git clone https://github.com/Sir-Nightmare/autotests.git`  
 - **Install necessary modules:** `pip3 install -r requirements.txt`
-- **Edit constants with paths and password in needed script**
+- **Edit global constants with paths and password in needed script**
 - **Run needed script:**   
 `python autotest1.py <url to check>`   
 `python autotest2.py`   
@@ -28,3 +28,17 @@ python autotest1.py http://www.kaspersky.com/antiphishing_test
 python autotest2.py
 python autotest3.py https://paypal.com
 ```
+
+####Заметки о процессе разработки третьего автотеста
+
+Было интересно проверить, как будут работать другие способы получения скриншота,
+ведь если делать его вручную, то все корректно работает.
+Через Chrome Remote Desktop видно картинку, которая была перед включением безопасного браузера
+или черный экран, если безопасный браузер был включен до удаленного подключения.
+Я решил попробовать эмулировать ручное получение скриншота, на StackOverflow нашел код,
+написанный с помощью ctypes и передающий коды клавиатуры, однако ничего не вышло.
+В буфере обмена даже черной картинки не было, туда вообще ничего не попадало. Выводилось то,
+что там было до работы скрипта, при том что без запущенного безопасного браузера все работало
+корректно.
+Видимо это заблокировано где-то глубже и хитрее, раз ручное получение работает.
+Могу предположить, что написанное выше достаточно очевидно, но хотелось проверить самому)
